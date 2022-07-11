@@ -21,11 +21,3 @@ if lic >= 0.00:
     print(f'LIC: {lic:.2f}')
 else:
     print('LIC: 0')
-capacidade = (1-pmedia) * 100
-print(f'Capacidade do processo: {capacidade:.2f}%')
-if capacidade < 100 - meta:
-    print(f'Processo acima da meta gerencial de {meta}% NÃO CONFORMES')
-else:
-    print(f'Processo dentro do limite gerencial de {meta}%')
-indicecp = meta / pmedia
-print(f'Indice cp: {indicecp:.3f}')
