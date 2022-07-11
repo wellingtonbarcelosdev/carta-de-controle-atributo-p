@@ -1,5 +1,6 @@
 from math import sqrt
 amostra = int(input('Tamanho da amostra: '))
+meta = float(input('Meta gerencial (em %): '))
 dados = cont = somadados = somadefeituosos = 0
 while cont < amostra:
     cont += 1
