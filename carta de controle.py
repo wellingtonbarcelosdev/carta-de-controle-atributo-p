@@ -10,9 +10,9 @@ while cont < amostra:
     print(f'Porcentagem de defeituosos amostra {cont}: {porcentagem:.2f}%')
     somadados += dados
     somadefeituosos += defeituosos
-pmedia = somadefeituosos / amostra
+pmedia = (somadefeituosos / somadados) * 100
 amostramedia = (somadados / amostra)
-print('-=' * 20)
+print('-=' *30)
 lsc = pmedia + 3 * sqrt((pmedia * (100 - pmedia)) / amostramedia)
 print(f'LSC: {lsc:.2f}')
 lic = pmedia - 3 * sqrt((pmedia * (100 - pmedia)) / amostramedia)
