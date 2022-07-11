@@ -11,11 +11,10 @@ while cont < amostra:
     somadefeituosos += defeituosos
 pmedia = (somadefeituosos / somadados) * 100
 amostramedia = (somadados / amostra)
-print(f'{pmedia:.2f}')
-print(f'{amostramedia:.2f}')
 lsc = pmedia + 3 * sqrt((pmedia * (100 - pmedia)) / amostramedia)
 print(f'LSC: {lsc:.2f}')
 lic = pmedia - 3 * sqrt((pmedia * (100 - pmedia)) / amostramedia)
+print(f'LC: {pmedia}')
 if lic >= 0.00:
     print(f'LIC: {lic:.2f}')
 else:
