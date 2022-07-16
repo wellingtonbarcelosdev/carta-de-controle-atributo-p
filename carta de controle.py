@@ -21,3 +21,4 @@ if lic >= 0.00:
     print(f'LIC: {lic:.2f}')
 else:
     print('LIC: 0')
+    
